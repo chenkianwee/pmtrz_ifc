@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<FrozenViews SchemaVersion="1">
-  <Views Count="2">
-    <Camera settings="  PerspectiveCamera {   position -12511.139 -14110.272 1159.3818   orientation 0.86285621 -0.35740674 -0.35740674  1.7177714   nearDistance 17957.676   farDistance 52357.992   focalDistance 35140.668   heightAngle 0.78539819  } "/>
-    <Camera settings="  PerspectiveCamera {   position 40222.402 32548.969 1846.5103   orientation -0.28108472 -0.67859834 -0.67859834  3.6896212   nearDistance 17957.654   farDistance 52357.973   focalDistance 35140.668   heightAngle 0.78539819  } "/>
-  </Views>
-</FrozenViews>
