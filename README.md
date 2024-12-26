@@ -17,8 +17,10 @@
     ```
 3. Open the file in ifc2osmod_gendgn_egs/freecad/small_office.FCStd with FreeCAD. In Ubuntu, right click -> choose FreeCAD to open it
 4. Once you open the file. You can export the model as IFC. Select SmallOffice on the Model Tab. Go to File -> Export. At the Files of type parameter choose Industry Foundation Classes (*.ifc). Export it to the ifc folder ifc2osmod_gendgn_egs/ifc/small_office.ifc
+![image](https://github.com/user-attachments/assets/9ac68f15-eee5-443a-b442-862ad9ff65e5)
 
 5. Reopen the IFC file in FreeCAD to check the export. File -> Open and choose the exported IFC file. You should be able to open the file as shown below.
+![image](https://github.com/user-attachments/assets/a9de568c-fdcb-4a51-8407-58b434d2d8fc)
 
 6. Now that we have successfully exported an IFC file we will use the file in gendgn module to generate variants of this design.
 
