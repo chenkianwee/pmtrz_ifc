@@ -2,6 +2,7 @@
 
 ## Getting Started
 - This tutorial uses Ubuntu 24.04 OS
+- install openstudio application 1.8.0 (https://github.com/openstudiocoalition/OpenStudioApplication/releases/tag/v1.8.0)
 
 ### FreeCAD example
 1. Download FreeCAD (https://www.freecad.org/downloads.php)
@@ -37,7 +38,7 @@
     ```
     pip install gendgn
     ```
-4. Go to the directory where you have dowloaded the example files for this tutorial.
+4. Go to the directory where you have downloaded the example files for this tutorial.
     ```
     cd ifc2osmod_gendgn_egs
     ```
@@ -99,8 +100,9 @@
     ```
 2. Once done you can go to the res/small_office/small_office_0/csv/small_office_0_wrkflw_1_1_to_12_31_between_0_and_23_at1.csv and look at the simulation results.
 
-
 ## Development
+1. Download the example files from this url https://github.com/chenkianwee/ifc2osmod_gendgn_egs/archive/refs/heads/main.zip
+
 ### cd to the right folder 
 ```
 cd gendgn/src
@@ -108,20 +110,20 @@ cd gendgn/src
 
 ### execute pmtrz_wwr_constr.py
 ```
-python -m gendgn.pmtrz_wwr_constr -i ../test_data/ifc/small_office.ifc -r ../results/json/pmtrz_wwr_constr.json
+python -m gendgn.pmtrz_wwr_constr -i path_to/ifc2osmod_gendgn_egs/ifc/small_office.ifc -r path_to/ifc2osmod_gendgn_egs/json/pmtrz_wwr_constr.json
 ```
 
 ### execute sample_variants.py
 ```
-python -m gendgn.sample_variants -n 5 -j ../results/json/pmtrz_wwr_constr.json
+python -m gendgn.sample_variants -n 5 -j path_to/ifc2osmod_gendgn_egs/json/pmtrz_wwr_constr.json
 ```
 
 ### execute exe_wwr_constr.py
 ```
-python -m gendgn.exe_wwr_constr -j ../results/json/pmtrz_wwr_constr.json -i ../test_data/ifc/small_office.ifc -r ../results/ifc/small_office_variants
+python -m gendgn.exe_wwr_constr -j path_to/ifc2osmod_gendgn_egs/json/pmtrz_wwr_constr.json -i path_to/ifc2osmod_gendgn_egs/ifc/small_office.ifc -r path_to/ifc2osmod_gendgn_egs/ifc/small_office_variants
 ```
 
 ### execute batch_eval.py
 ```
-python -m gendgn.batch_eval -v ../results/ifc/small_office_variants -r ../results/osmod/batch_small_offices -e ../test_data/epw/miami/USA_FL_Miami.Intl.AP.722020_TMY3.epw -d ../test_data/epw/miami/USA_FL_Miami.Intl.AP.722020_TMY3.ddy -m ../test_data/json/measure_sel.json
+python -m gendgn.batch_eval -v path_to/ifc2osmod_gendgn_egs/ifc/small_office_variants -r path_to/ifc2osmod_gendgn_egs/res/batch_small_offices -e path_to/ifc2osmod_gendgn_egs/epw/miami/USA_FL_Miami.Intl.AP.722020_TMY3.epw -d path_to/ifc2osmod_gendgn_egs/epw/miami/USA_FL_Miami.Intl.AP.722020_TMY3.ddy -m path_to/ifc2osmod_gendgn_egs/json/measure_sel.json
 ```
